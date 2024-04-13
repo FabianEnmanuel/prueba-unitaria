@@ -1,4 +1,4 @@
-name: Pruebas unitarias
+name: Prueba unitaria
 
 on:
   push: {}
@@ -15,10 +15,6 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
-
-      - name: Instalar dependencias
-        run: |
-          pip install unittest
 
       - name: Ejecutar pruebas unitarias
         run: python reverse_string_test.py
